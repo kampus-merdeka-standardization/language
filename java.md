@@ -76,3 +76,96 @@ Selain OpenJDK ada beberapa alternatif lain seperti:
         ```
 
 # Convention
+
+## _File_
+- _File_ Java harus diberi nama dengan huruf kapital pertama (PascalCase) yang mencerminkan nama kelas di dalamnya. Contoh: `MyClass.java`.
+
+## Variabel
+- Nama variabel harus dimulai dengan huruf kecil (camelCase) dan harus menjelaskan tujuan variabel tersebut. Contoh: `namaDepan`, `jumlahMahasiswa`.
+- Konstanta harus ditulis dengan huruf besar dan menggunakan garis bawah sebagai pemisah. Contoh: `PI`, `MAX_VALUE`.
+
+## Fungsi (Metode)
+- Nama metode harus dimulai dengan huruf kecil (camelCase) dan harus menjelaskan tujuan metode tersebut. Contoh: `hitungTotal()`, `ambilData()`.
+- Nama metode yang bertindak sebagai perintah harus menggunakan kata kerja yang jelas untuk menjelaskan tindakan yang dilakukan. Contoh: `jalankanProses()`, `simpanData()`.
+- Metode yang mengembalikan nilai boolean seringkali diawali dengan kata kerja yang bersifat mengecek (misalnya, `is`, `has`, `can`, `should`). Contoh: `isValid()`, `hasPermission()`.
+
+## Konstanta
+- Nama konstanta harus ditulis dengan huruf besar dan menggunakan garis bawah sebagai pemisah (`SNAKE_CASE`). Contoh: `PI`, `MAX_VALUE`.
+
+## Class, interface, Enum, Dan lain lain
+- Ditulis dengan format `PascalCase` seperti `Person`, `Animal`, `User`
+
+## Comment
+- Selalu sertakan komentar untuk menjelaskan kode yang kompleks, tujuan, atau pemahaman tambahan tentang cara kode bekerja.
+- Komentar harus informatif dan relevan, membantu pembaca memahami mengapa kode tertentu ditulis atau cara kerjanya.
+- Hindari komentar yang hanya memberikan informasi yang jelas dari kode itu sendiri (misalnya, "Ini adalah penjumlahan dua angka").
+
+### Single-Line Comment
+Komentar single-line digunakan untuk memberikan penjelasan singkat pada baris kode tertentu. Caranya adalah dengan menambahkan komentar single-line dengan menggunakan dua garis miring `//`.
+
+```java
+int umur = 30; // Variabel untuk menyimpan umur
+```
+
+### Multi-line Comment
+Komentar multi-line digunakan untuk memberikan penjelasan lebih panjang atau untuk menutupi beberapa baris kode. Caranya adalah dengan menambahkan komentar multi-line dengan menggunakan `/*` untuk awalan komentar dan `*/` untuk mengakhiri komentar.
+
+```java
+/**
+ * Ini adalah komentar multi-line.
+ * Ini dapat menutupi beberapa baris kode sekaligus.
+ * Berguna untuk penjelasan yang lebih rinci.
+ */
+int jumlahMahasiswa = 50;
+```
+
+## Penanganan Kesalahan (Error Handling)
+- Ketika menangani kesalahan, gunakan struktur pengecualian (_exception_) yang sesuai, dan berikan pesan kesalahan yang informatif.
+- Selalu tangani kesalahan dengan cara yang sesuai dengan konteks, seperti menggunakan blok `try-catch` untuk menangani pengecualian.
+
+## Try-with-resource
+- Saat menggunakan sumber daya seperti berkas, soket, atau objek yang memerlukan penutupan eksplisit, selalu gunakan blok try-with-resources untuk mengelola sumber daya tersebut.
+- Blok try-with-resources memastikan bahwa sumber daya akan ditutup secara otomatis setelah selesai digunakan, yang menghindari kebocoran sumber daya (resource leaks).
+- Blok try-with-resources hanya dapat digunakan pada Object yang mengimplementasikan interface `Closeable`
+- Contoh penggunaan blok try-with-resources untuk menangani sumber daya:
+```java
+try (FileInputStream input = new FileInputStream("file.txt");
+     FileOutputStream output = new FileOutputStream("output.txt")) {
+    // Lakukan operasi pada file
+} catch (IOException e) {
+    // Tangani kesalahan jika terjadi
+}
+```
+Penggunaan try-with-resources adalah praktik yang sangat disarankan dalam Java untuk memastikan bahwa sumber daya eksternal dielola dengan benar dan ditutup setelah selesai digunakan. Hal ini membantu mencegah kebocoran sumber daya dan membuat kode lebih aman dan efisien.
+
+Berikut contoh yang tidak direkomendasikan, yaitu tanpa try-with-resource 
+
+```java
+FileInputStream input = null;
+FileOutputStream output = null;
+
+try {
+    input = new FileInputStream("file.txt");
+    output = new FileOutputStream("output.txt");
+
+    // Lakukan operasi pada file
+} catch (IOException e) {
+    // Tangani kesalahan jika terjadi
+} finally {
+    try {
+        if (input != null) {
+            input.close();
+        }
+    } catch (IOException e) {
+        // Tangani kesalahan saat menutup input stream
+    }
+
+    try {
+        if (output != null) {
+            output.close();
+        }
+    } catch (IOException e) {
+        // Tangani kesalahan saat menutup output stream
+    }
+}
+```
