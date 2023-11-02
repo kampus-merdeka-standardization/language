@@ -215,6 +215,43 @@ let person = {
 };
 ```
 
+Tentu, berikut adalah perincian yang disederhanakan untuk penamaan kelas, interface, dan tipe:
+
+## Class, Interface, dan Type (Tipe)
+
+### Benar:
+- Gunakan PascalCase (huruf kapital di awal setiap kata) untuk penamaan kelas, interface, dan tipe:
+```typescript
+class UserAccount {
+    // ...
+}
+
+interface IUserProfile {
+    // ...
+}
+
+type UserCredentials = {
+    // ...
+};
+```
+
+### Salah:
+- Menggunakan camelCase (huruf kecil di awal kata pertama dan huruf kapital di awal kata berikutnya) atau huruf kecil untuk penamaan kelas, interface, dan tipe:
+```typescript
+class userAccount {
+    // ...
+}
+
+interface iUserProfile {
+    // ...
+}
+
+type userCredentials = {
+    // ...
+};
+```
+
+
 ## Comment
 
 ### Benar:
