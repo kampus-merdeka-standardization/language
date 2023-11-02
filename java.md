@@ -6,7 +6,28 @@ Sederhananya `JDK (Java Development Kit)` merupakan tools untuk `mengembangkan` 
 
 # Comparation
 
-## Pros & Cons
+## Pros & Cons Java
+| Pro | Kontra |
+| :-- | :----- |
+| Java adalah bahasa pemrograman yang sederhana, mudah dipelajari, dan dipahami. | Java membutuhkan lisensi komersial yang berbayar untuk penggunaan komersial. |
+| Java adalah bahasa pemrograman berorientasi objek, yang membantu menyelesaikan masalah dunia nyata dengan lebih mudah dan aman. | Java memiliki kinerja yang lebih rendah dibandingkan bahasa pemrograman level rendah seperti C dan C++. |
+| Java adalah bahasa pemrograman yang aman, karena tidak menggunakan pointer yang dapat menyebabkan akses memori yang tidak sah. | Java memiliki tampilan dan nuansa yang kurang menarik di desktop. |
+| Java adalah bahasa pemrograman yang murah dan ekonomis untuk dikembangkan dan dipelihara, karena dapat berjalan di berbagai mesin tanpa memerlukan perangkat keras khusus. | Java memiliki tingkat kompleksitas kode yang tinggi, karena menggunakan banyak fitur dan konsep seperti abstraksi, enkapsulasi, pewarisan, polimorfisme, dll. |
+| Java adalah bahasa pemrograman yang platform-independen, yang berarti kode yang ditulis di satu sistem dapat dijalankan di sistem lain yang memiliki Java di dalamnya. | Java membutuhkan ruang memori yang signifikan, karena menggunakan manajemen memori otomatis (garbage collection) yang dapat menyebabkan penundaan (latency) saat menjalankan aplikasi. |
+| Java adalah bahasa pemrograman level tinggi, yang berarti kode ditulis dalam bahasa manusia yang mirip dengan bahasa Inggris. | Java memiliki dukungan terbatas untuk pemrograman level rendah, seperti manipulasi bit atau akses langsung ke perangkat keras. |
+| Java mendukung fitur portabilitas, yang berarti Java dapat digunakan di berbagai platform dan perangkat. |  |
+| Java memiliki komunitas dukungan yang besar dan aktif, yang dapat membantu programmer menyelesaikan masalah atau belajar hal-hal baru tentang Java. |  |
+| Java mendukung multithreading, yang berarti Java dapat menjalankan beberapa proses secara bersamaan dan meningkatkan kinerja aplikasi. |  |
+| Pada Java versi terbaru terdapat fitur-fitur yang menarik dan berguna seperti virtual threads, record patterns, pattern matching for switch, string templates, unnamed classes and instance main methods, dan lain-lain ||
+| Java dapat digunakan untuk mengembangkan aplikasi web dan mobile yang berskala besar, efisien, dan responsif ||
+
+### Reference :
+- [Pros and Cons of Java | Advantages and Disadvantages of Java - DataFlair](https://data-flair.training/blogs/pros-and-cons-of-java/)
+- [20 Important Pros and Cons of Java 2023 | Ablison](https://www.ablison.com/important-pros-and-cons-of-java/#google_vignette)
+- [Pros and Cons of Choosing Java Development For Your Project](https://star-knowledge.com/blog/pros-and-cons-of-choosing-java-development-for-your-project/)
+- [Advantages and disadvantages of Java - Javatpoint](https://www.javatpoint.com/advantages-and-disadvantages-of-java)
+- [The Pros and Cons of Java Development | Blog - BairesDev](https://www.bairesdev.com/blog/pros-cons-java-development/)
+- [Pros and Cons of Java: Key Advantages and Disadvantages - Softjourn](https://softjourn.com/insights/pros-and-cons-of-java-development)
 
 # Installation
 Pada dokumentasi ini, kita akan mencoba meng-install menggunakan [OpenJDK](https://openjdk.java.net/) dikarenakan open source dan juga free.
