@@ -16,7 +16,7 @@ Pada tahun 2012, TypeScript diperkenalkan ke publik dengan tujuan utama untuk me
 |--------------------------------------------------------|---------------------------------------------------------------|
 | Penyelesaian kode yang sangat baik | Keamanan tidak dijamin pada saat runtime |
 | Dukungan untuk adopsi bertahap    | TypeScript menambah kompleksitas ekstra, bahkan untuk tugas-tugas sederhana|
-| Integrasi pustaka pihak ketiga yang lebih baik| Pesan kesalahan bisa sulit untuk diuraikan|
+| Integrasi library pihak ketiga yang lebih baik| Pesan kesalahan bisa sulit untuk diuraikan|
 | Tipe yang disediakan oleh komunitas| Kinerja build dapat terpengaruh        |
 | Keamanan tipe yang lebih baik: TypeScript menyediakan pengetikan statis, yang berarti Anda dapat menangkap kesalahan pada saat waktu kompilasi alih-alih waktu runtime|                                                               |
 
@@ -34,7 +34,7 @@ Berikut adalah tabel yang diperbarui untuk kelebihan dan kekurangan PHP dengan r
 | Gratis dan open-source      | Dapat menurun popularitasnya|
 | Dapat diunduh dan digunakan di mana saja untuk acara atau aplikasi web| Sintaks yang tidak konsisten|
 | Platform-independent: aplikasi PHP dapat berjalan di berbagai OS seperti UNIX, Linux, Windows, dll.| Alat debugging yang buruk|
-| Pustaka yang luas              | Masalah keamanan seperti XSS, SQL Injection, dan Session hacking|
+| library yang luas              | Masalah keamanan seperti XSS, SQL Injection, dan Session hacking|
 | Dapat disesuaikan dengan berbagai platform dan teknologi| Masalah dan bug tidak dapat diatasi dengan cepat|
 | Dukungan komunitas yang kuat   | Harus menulis banyak kode untuk membangun aplikasi|
 | Pemeliharaan yang lebih mudah   |                              |
@@ -55,8 +55,8 @@ Referensi:
 ## Pros & Cons Python
 | Kelebihan                                      | Kekurangan                                                     |
 |------------------------------------------------|----------------------------------------------------------------|
-| Mudah dipelajari dan digunakan】| Masalah kecepatan dan performa                 |
-| Perpustakaan yang luas        | Kurang mendukung komputasi mobile             |
+| Mudah dipelajari dan digunakan| Masalah kecepatan dan performa                 |
+| library yang luas        | Kurang mendukung komputasi mobile             |
 | Versatil (berbagai kegunaan)  | Akses database yang kurang dikembangkan      |
 | Produktivitas yang meningkat  | Kesalahan runtime karena tipe data dinamis    |
 | Portabilitas (dapat berjalan di berbagai platform)|                                                                |
