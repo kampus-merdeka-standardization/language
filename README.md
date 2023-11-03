@@ -5,7 +5,7 @@ Merupakan standarisasi dari ketiga bahasa pemrograman utama yang dipakai **Telko
 Golang Intro
 
 ## [Java](/java/1_introduction.md)
-Java Intro
+Java adalah bahasa pemrograman yang platform-independen, populer, dan berorientasi objek dengan fokus pada keamanan dan portabilitas. Dikenal karena kemudahan penggunaan, kekayaan pustaka, dan dukungan yang kuat untuk pemrograman multithreading. Java digunakan dalam berbagai jenis aplikasi, dari desktop hingga web, perangkat seluler, dan sistem terdistribusi.
 
 ## [Javascript/Typescript](/javascript-or-typescript/1_introduction.md)
 
