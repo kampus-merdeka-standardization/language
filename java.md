@@ -103,18 +103,125 @@ Selain OpenJDK ada beberapa alternatif lain seperti:
 
 ## Variabel
 - Nama variabel harus dimulai dengan huruf kecil (camelCase) dan harus menjelaskan tujuan variabel tersebut. Contoh: `namaDepan`, `jumlahMahasiswa`.
-- Konstanta harus ditulis dengan huruf besar dan menggunakan garis bawah sebagai pemisah. Contoh: `PI`, `MAX_VALUE`.
+
+### Contoh yang benar
+```java
+int studentAge;
+String carModel;
+double bankBalance;
+```
+
+### Contoh yang salah
+```java
+int StudentAge; // menggunakan PascalCase
+String car_model; // menggunakan snake_case
+double bank_balance; // menggunakan snake_case
+int 123Var; // diawali dengan angka
+```
 
 ## Fungsi (Metode)
 - Nama metode harus dimulai dengan huruf kecil (camelCase) dan harus menjelaskan tujuan metode tersebut. Contoh: `hitungTotal()`, `ambilData()`.
 - Nama metode yang bertindak sebagai perintah harus menggunakan kata kerja yang jelas untuk menjelaskan tindakan yang dilakukan. Contoh: `jalankanProses()`, `simpanData()`.
 - Metode yang mengembalikan nilai boolean seringkali diawali dengan kata kerja yang bersifat mengecek (misalnya, `is`, `has`, `can`, `should`). Contoh: `isValid()`, `hasPermission()`.
 
+### Contoh yang benar
+```java
+public class Example {
+    public void printMessage(String message) {
+        System.out.println(message);
+    }
+
+    public int calculateSum(int a, int b) {
+        return a + b;
+    }
+}
+```
+
+### Contoh yang salah
+```java
+public class Example {
+    // Fungsi dengan nama PascalCase
+    public void PrintMessage(String message) {
+        System.out.println(message);
+    }
+
+    // Fungsi dengan snake_case
+    public int calculate_sum(int a, int b) {
+        return a + b;
+    }
+
+    // Fungsi dengan nama yang tidak deskriptif
+    public void func1(int x, int y) {
+        // ...
+    }
+}
+```
+
 ## Konstanta
 - Nama konstanta harus ditulis dengan huruf besar dan menggunakan garis bawah sebagai pemisah (`SNAKE_CASE`). Contoh: `PI`, `MAX_VALUE`.
+- Konstanta umumnya diletakkan pada bagian awal kelas
+
+### Contoh yang benar
+```java
+public class MyClass {
+    public static final int MAX_VALUE = 100;
+    public static final String API_KEY = "myApiKey";
+    public static final double PI = 3.14159265359;
+    // ...
+}
+```
+
+### Contoh yang salah 
+```java
+public class ConstantsExample {
+
+    // ...    => seharusnya field konstan berada pada awal kelas
+
+    public static final int maxvalue = 100; // Penamaan dengan huruf kecil
+    public static final String apikey = "myApiKey"; // Penamaan dengan huruf kecil
+    public static final double PiValue = 3.14159265359; // Penamaan tidak konsisten
+}
+```
 
 ## Class, interface, Enum, Dan lain lain
 - Ditulis dengan format `PascalCase` seperti `Person`, `Animal`, `User`
+
+### Contoh yang benar
+```java
+public class Student {
+    // ...
+}
+
+public class CarModel {
+    // ...
+}
+
+public class BankAccount {
+    // ...
+}
+```
+
+### Contoh yang salah
+```java
+public class student {
+    // Nama class dengan huruf kecil
+    // ...
+}
+
+public class car_model {
+    // Nama class dengan garis bawah
+    // ...
+}
+
+public class Bank_Account {
+    // ...
+}
+
+public class 123Class {
+    // Nama class dengan angka di depan
+    // ...
+}
+```
 
 ## Comment
 - Selalu sertakan komentar untuk menjelaskan kode yang kompleks, tujuan, atau pemahaman tambahan tentang cara kode bekerja.
