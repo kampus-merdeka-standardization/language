@@ -2,7 +2,7 @@
 Merupakan standarisasi dari ketiga bahasa pemrograman utama yang dipakai **Telkomsel** dalam proses pengembangan perangkat lunak
 
 ## [Golang](/golang/1_introduction.md)
-Golang Intro
+Golang (atau biasa disebut dengan Go) adalah bahasa pemrograman yang dikembangkan di Google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan ke publik tahun 2009. Penciptaan bahasa Go didasari bahasa C dan C++, oleh karena itu gaya sintaksnya mirip.
 
 ## [Java](/java/1_introduction.md)
 Java adalah bahasa pemrograman yang platform-independen, populer, dan berorientasi objek dengan fokus pada keamanan dan portabilitas. Dikenal karena kemudahan penggunaan, kekayaan pustaka, dan dukungan yang kuat untuk pemrograman multithreading. Java digunakan dalam berbagai jenis aplikasi, dari desktop hingga web, perangkat seluler, dan sistem terdistribusi.
