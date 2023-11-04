@@ -1,7 +1,7 @@
 # Telkomsel Main Language
 Merupakan standarisasi dari ketiga bahasa pemrograman utama yang dipakai **Telkomsel** dalam proses pengembangan perangkat lunak
 
-## [Golang](/golang/1_introduction.md)
+## [Golang](/golang.md)
 Golang (atau biasa disebut dengan Go) adalah bahasa pemrograman yang dikembangkan di Google oleh Robert Griesemer, Rob Pike, dan Ken Thompson pada tahun 2007 dan mulai diperkenalkan ke publik tahun 2009. Penciptaan bahasa Go didasari bahasa C dan C++, oleh karena itu gaya sintaksnya mirip.
 
 ## [Java](/java/1_introduction.md)
