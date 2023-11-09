@@ -80,12 +80,24 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 
 # Convention
 
+## Table Comparison
+
+| Kategori | Penulisan | Pemilihan Kata |
+| -------- | --------- | -------------- |
+| File name | snake_case| kata benda     |
+| Variable name| private: camelCase <br> public: PascalCase | kata benda |
+| Constanta name | UPPER_SNAKE_CASE | kata benda |
+| Struct name | private: camelCase <br> public: PascalCase | kata benda |
+| Function name | private: camelCase <br> public: PascalCase | kata kerja |
+| Interface name | private: camelCase <br> public: PascalCase | kata benda dengan akhiran "Interface" |
+
 ## File
 
 - Go mengikuti konvensi di mana semua file sumber menggunakan huruf kecil dengan garis bawah yang memisahkan beberapa kata
 - Nama file gabungan dipisahkan dengan _
 - Nama file yang dimulai dengan “.” atau “_” diabaikan oleh Go
-- File dengan akhiran _test.go hanya dikompilasi dan dijalankan oleh alat go test.
+- File dengan akhiran _test.go hanya dikompilasi dan dijalankan oleh alat go test
+- Penamaan nama file menggunakan *snake_case* dan kata benda
 
 ### Example
 
@@ -105,7 +117,8 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 
 - Nama variabel harus deskriptif dan singkat, dan harus menggambarkan nilai yang disimpan dalam variabel
 - Nama awal variabel harus ditulis dalam huruf kecil, kecuali jika variabel bersifat *public*
-- Jika nama variabel terdiri dari dua atau lebih kata, gunakan huruf kapital pada awal setiap kata kecuali kata pertama
+- Penulisan nama variabel menggunakan *camelCase* untuk *private* dan *PascalCase* untuk *public*
+- Gunakan kata benda
 - Hindari penggunaan nama variabel yang sama dengan tipe data bawaan Go, seperti `string` atau `int`
 
 ### Example
@@ -123,9 +136,12 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
   var TOTAL int
   ```
 
-## Fungsi
+## Function
 
-Untuk penamaan fungsi di Golang sama dengan penamaan di variabel
+- Nama fungsi harus deskriptif dan singkat, dan harus menggambarkan nilai yang disimpan dalam fungsi
+- Nama awal fungsi harus ditulis dalam huruf kecil, kecuali jika fungsi bersifat *public*
+- Gunakan *camelCase* untuk *private* dan *PascalCase* untuk *public*
+- Gunakan kata kerja dalam penamaan fungsi
 
 ### Example
 
@@ -157,8 +173,9 @@ Untuk penamaan fungsi di Golang sama dengan penamaan di variabel
 ## Const
 
 - Nama constant harus ditulis dalam huruf besar
-- ika nama constant terdiri dari dua atau lebih kata, gunakan underscore (_) sebagai pemisah antara kata-kata tersebut
-- 
+- Jika nama constant terdiri dari dua atau lebih kata, gunakan underscore (_) sebagai pemisah antara kata-kata tersebut
+- Penulisan constant menggunakan *UPPER_SNAKE_CASE*
+- Gunakan kata benda
 
 ### Example
 
@@ -174,7 +191,13 @@ Untuk penamaan fungsi di Golang sama dengan penamaan di variabel
 
 ## Struct
 
-Penulisan nama `struct` dalam Go mengikuti konvensi yang sama dengan penulisan nama variabel.
+- Penulisan nama struct sama dengan nama variabel
+- Nama struct harus deskriptif dan singkat, dan harus menggambarkan nilai yang disimpan dalam struct
+- Nama awal struct harus ditulis dalam huruf kecil, kecuali jika struct bersifat *public*
+- Gunakan *camelCase* untuk *private* dan *PascalCase* untuk *public*
+- Gunakan kata benda untuk nama struct
+
+### Example
 
 - Benar
   ```go
@@ -205,6 +228,35 @@ Penulisan nama `struct` dalam Go mengikuti konvensi yang sama dengan penulisan n
     EMAIL string
   }
   ```
+
+## Interface 
+
+- Nama interface harus deskriptif dan mencerminkan fungsinya
+- Nama awal interface harus ditulis dalam huruf kecil, kecuali jika interface bersifat *public*
+- Gunakan *camelCase* untuk *private* dan *PascalCase* untuk *public*
+- Gunakan kata benda untuk nama interface
+- Tambahkan suffix atau akhiran "Interface"
+
+### Example
+
+- Benar
+  ```go
+  type countInterface interface {
+    countArea() float64
+  }
+
+  type CountInterface interface {
+    countArea() float64
+  }
+  ```
+
+- Salah
+  ```go
+  type count interface {
+    countArea() float64
+  }
+  ```
+
 ## Comment
 
 - Komentar harus deskriptif dan singkat, dan harus menggambarkan tugas yang dilakukan oleh kode
@@ -244,3 +296,4 @@ func countArea(side float64) float64 {
 - [Dokumentasi Resmi Go](https://go.dev/doc/)
 - [Effectice Go](https://go.dev/doc/effective_go)
 - [Dasar Pemrograman Golang](https://dasarpemrogramangolang.novalagung.com/)
+- [Interface Naming](https://medium.com/@dotronglong/interface-naming-convention-in-golang-f53d9f471593)
