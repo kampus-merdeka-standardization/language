@@ -142,7 +142,7 @@ Dengan langkah-langkah ini, Anda seharusnya bisa menginstal Node.js dan TypeScri
 
 ### Benar:
 - Nama file harus menggunakan kebab-case dan memiliki ekstensi `.ts`, seperti `hello-world.ts`.
-- Setiap file harus memiliki satu tujuan atau tanggung jawab.
+- Setiap file harus memiliki satu tujuan atau tanggung jawab, biasanya mengikuti kata benda, misalnya `user-service.ts`.
 
 ### Salah:
 - Menggunakan nama file dengan spasi atau karakter khusus lainnya seperti `Hello World.ts`.
@@ -150,83 +150,83 @@ Dengan langkah-langkah ini, Anda seharusnya bisa menginstal Node.js dan TypeScri
 ## Variable
 
 ### Benar:
-- Gunakan camelCase untuk nama variabel:
+- Gunakan camelCase untuk nama variabel, biasanya kata benda atau frasa kata benda:
 ```typescript
-let myVariableName: string;
+let userName: string;
 ```
 
 ### Salah:
 - Menggunakan nama variabel dengan huruf besar atau underscore:
 ```typescript
-let MyVariableName: string;
-let my_variable_name: string;
+let UserName: string;
+let user_name: string;
 ```
 
 ## Fungsi
 
 ### Benar:
-- Gunakan camelCase untuk nama fungsi dan berikan tipe kembali yang jelas:
+- Gunakan camelCase untuk nama fungsi. Fungsi biasanya mengikuti kata kerja atau frasa kata kerja dan berikan tipe kembali yang jelas:
 ```typescript
-function addNumbers(a: number, b: number): number {
-    return a + b;
+function calculateArea(width: number, height: number): number {
+    return width * height;
 }
 ```
 
 ### Salah:
 - Menggunakan nama fungsi dengan huruf besar atau tidak memiliki tipe kembali:
 ```typescript
-function AddNumbers(a, b) {
-    return a + b;
+function CalculateArea(width, height) {
+    return width * height;
 }
 ```
 
 ## Const
 
 ### Benar:
-- Gunakan UPPERCASE untuk konstanta dan pisahkan kata dengan underscore:
+- Gunakan UPPERCASE untuk konstanta dan pisahkan kata dengan underscore. Konstanta sering kali adalah kata benda:
 ```typescript
-const MAX_LIMIT: number = 100;
+const DEFAULT_COLOR: string = "blue";
 ```
 
 ### Salah:
 - Menggunakan camelCase atau kebab-case untuk konstanta:
 ```typescript
-const maxLimit: number = 100;
-const max-limit: number = 100;
+const defaultColor: string = "blue";
+const default-color: string = "blue";
 ```
 
 ## Object
 
 ### Benar:
-- Gunakan camelCase untuk objek:
+- Gunakan camelCase untuk objek dan propertinya, biasanya kata benda atau frasa kata benda:
 ```typescript
-let person = {
-    firstName: "John",
-    lastName: "Doe"
+let orderDetails = {
+    itemId: "B123",
+    quantity: 2,
+    pricePerUnit: 39.95
 };
 ```
 
 ### Salah:
 - Menggunakan huruf besar atau underscore untuk kunci objek:
 ```typescript
-let person = {
-    First_Name: "John",
-    Last_Name: "Doe"
+let Order_Details = {
+    Item_ID: "B123",
+    Quantity: 2,
+    Price_Per_Unit: 39.95
 };
 ```
-
-Tentu, berikut adalah perincian yang disederhanakan untuk penamaan kelas, interface, dan tipe:
 
 ## Class, Interface, dan Type (Tipe)
 
 ### Benar:
-- Gunakan PascalCase (huruf kapital di awal setiap kata) untuk penamaan kelas, interface, dan tipe:
+- Gunakan PascalCase untuk penamaan kelas, interface, dan tipe, biasanya menggunakan kata benda atau frasa kata benda yang menjelaskan entitas atau konsep:
 ```typescript
 class UserAccount {
     // ...
 }
 
-interface IUserProfile {
+interface UserProfile {
     // ...
 }
 
@@ -236,7 +236,7 @@ type UserCredentials = {
 ```
 
 ### Salah:
-- Menggunakan camelCase (huruf kecil di awal kata pertama dan huruf kapital di awal kata berikutnya) atau huruf kecil untuk penamaan kelas, interface, dan tipe:
+- Menggunakan camelCase atau huruf kecil untuk penamaan kelas, interface, dan tipe:
 ```typescript
 class userAccount {
     // ...
@@ -251,41 +251,58 @@ type userCredentials = {
 };
 ```
 
-
 ## Comment
 
 ### Benar:
-- Gunakan komentar untuk menjelaskan kode yang kompleks atau tidak jelas:
+- Gunakan komentar untuk menjelaskan kode yang kompleks atau tidak jelas. Komentar biasanya merupakan frasa atau kalimat yang menjelaskan logika atau fungsi kode:
 ```typescript
-// Ini adalah fungsi untuk menambahkan dua angka
-function add(a: number, b: number): number {
-    return a + b;
+// Menghitung dan mengembalikan area dari sebuah persegi panjang
+function calculateRectangleArea(width: number, height: number): number {
+    return width * height;
 }
 ```
 
 ### Salah:
-- Menulis komentar yang tidak berguna atau jelas:
+- Menulis komentar yang tidak berguna atau jelas, atau yang hanya mengulangi apa yang sudah jelas dari kode:
 ```typescript
-// Menambahkan a dan b
-function add(a: number, b: number): number {
-    return a + b;
+// Menambahkan width dan height
+function calculateRectangleArea(width: number, height: number): number {
+    return width * height;
 }
 ```
 
 ## Error Handling
 
 ### Benar:
-- Gunakan blok `try-catch` untuk menangani kesalahan:
+- Gunakan blok `try-catch` untuk menangani kesalahan dan memberikan komentar yang menjelaskan penanganan jika perlu:
 ```typescript
 try {
+    // Mencoba menjalankan fungsi yang berisiko
     let result = riskyFunction();
 } catch (error) {
+    // Menangkap dan mencatat kesalahan
     console.error(error);
 }
-``` 
+```
 
 ### Salah:
-- Mengabaikan kesalahan atau tidak menanganinya:
+- Mengabaikan kesalahan atau tidak menanganinya dengan benar, atau tidak memberikan komentar yang cukup jika penanganan kompleks:
 ```typescript
-let result = riskyFunction();  // jika terjadi kesalahan, tidak ada penanganannya
+let result = riskyFunction();  // Kesalahan tidak ditangani
 ```
+
+
+# Conclusion
+
+| Kategori | Penulisan | Pemilihan Kata |
+| --- | --- | --- |
+| File name | kebab-case | kata benda |
+| Variable name | camelCase | kata benda |
+| Function name | camelCase | kata kerja |
+| Constant name | UPPERCASE | kata benda |
+| Object key | camelCase | kata benda |
+| Class | PascalCase | kata benda |
+| Interface | PascalCase | kata benda |
+| Type name | PascalCase | kata benda |
+| Comment | - | frasa atau kalimat |
+| Error Handling | try-catch | - |
