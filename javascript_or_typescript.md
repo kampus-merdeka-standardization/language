@@ -1,4 +1,5 @@
 # Introduction
+
 **TypeScript** adalah superset dari JavaScript, yang berarti TypeScript mencakup semua aspek JavaScript dengan penambahan fitur-fitur khusus yang memungkinkan pengembangan aplikasi skala besar dengan lebih efisien.
 
 Pada tahun 2012, TypeScript diperkenalkan ke publik dengan tujuan utama untuk mengatasi keterbatasan yang ada pada JavaScript. Microsoft, dalam mengembangkan TypeScript, ingin meningkatkan kemampuan dan fleksibilitas bahasa ini untuk pengembangan aplikasi yang lebih kompleks dan robust. Rilis pertama TypeScript (versi 0.8) diperkenalkan pada Oktober 2012.
@@ -8,10 +9,10 @@ Pada tahun 2012, TypeScript diperkenalkan ke publik dengan tujuan utama untuk me
 - [Apa Itu TypeScript? Kelebihan TypeScript, dan Perbedaannya - Caraguna](https://caraguna.com/apa-itu-typescript/)
 - [Sejarah Lengkap JavaScript, TypeScript, dan Node.js - ICHI.PRO](https://ichi.pro/id/sejarah-lengkap-javascript-typescript-dan-node-js-38930825526926)
 
+## Comparation
 
-# Comparation
+### Pros & Cons Typescript
 
-## Pros & Cons Typescript
 | Kelebihan                                              | Kekurangan                                                    |
 |--------------------------------------------------------|---------------------------------------------------------------|
 | Penyelesaian kode yang sangat baik | Keamanan tidak dijamin pada saat runtime |
@@ -21,11 +22,11 @@ Pada tahun 2012, TypeScript diperkenalkan ke publik dengan tujuan utama untuk me
 | Keamanan tipe yang lebih baik: TypeScript menyediakan pengetikan statis, yang berarti Anda dapat menangkap kesalahan pada saat waktu kompilasi alih-alih waktu runtime|                                                               |
 
 Referensi:
+
 - [LogRocket Blog: Understanding TypeScript’s benefits and pitfalls](https://blog.logrocket.com/understanding-typescripts-benefits-and-pitfalls-24c1e02b3e9c/)
 - [Ablison: Pros And Cons Of Typescript 2023](https://www.ablison.com/pros-and-cons-of-typescript-2023/)
 
-
-## Pros & Cons Php
+### Pros & Cons Php
 
 Berikut adalah tabel yang diperbarui untuk kelebihan dan kekurangan PHP dengan referensi di akhir:
 
@@ -46,13 +47,15 @@ Berikut adalah tabel yang diperbarui untuk kelebihan dan kekurangan PHP dengan r
 | Dapat diskalakan                |                              |
 
 Referensi:
+
 - [GeeksforGeeks: Advantages and Disadvantages of PHP](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-php/)
 - [Softjourn: Why Use PHP in 2023? Advantages and Disadvantages](https://softjourn.com/en/blog/why-use-php-2023-advantages-and-disadvantages)
 - [EPAM: Advantages and Disadvantages of PHP Programming Language](https://anywhere.epam.com/business/pros-and-cons-of-php)
 - [Unstop: Advantages And Disadvantages Of PHP: Why Should You Use PHP?](https://unstop.com/php-pros-cons/)
 - [CHTips: Advantages and Disadvantages of PHP | Pros and Cons of PHP](https://www.chtips.com/php/advantages-and-disadvantages-of-php)
 
-## Pros & Cons Python
+### Pros & Cons Python
+
 | Kelebihan                                      | Kekurangan                                                     |
 |------------------------------------------------|----------------------------------------------------------------|
 | Mudah dipelajari dan digunakan| Masalah kecepatan dan performa                 |
@@ -65,34 +68,39 @@ Referensi:
 | Sintaks yang mudah dibaca  |                                                                |
 
 Referensi:
+
 - [ScanSkill: Python Programming Language: Pros & Cons](https://scanskill.com/backend/python/python-what-are-the-benefits-and-downsides-of-the-programming-language/)
 - [PixelCrayons: Pros and Cons of Python Programming Language](https://www.pixelcrayons.com/blog/web/pros-and-cons-of-python-programming-language/)
 - [Python Geeks: Advantages of Python | Disadvantages of Python](https://pythongeeks.org/advantages-disadvantages-python/)
 
-# Installation
-Tentu! Berikut adalah beberapa contoh tambahan yang mencakup langkah-langkah instalasi TypeScript dan Node.js pada sistem operasi yang berbeda, serta cara membuat dan menjalankan program TypeScript sederhana.
+## Installation
 
 ### 1. Instalasi pada Ubuntu:
 
 #### Instalasi Node.js:
+
 ```bash
 sudo apt update
 sudo apt install nodejs npm
 ```
 
 #### Instalasi TypeScript:
+
 ```bash
 sudo npm install -g typescript
 ```
 
 ### 2. Instalasi pada Windows:
 
-#### Instalasi Node.js:
+#### Instalasi Node.js Windows:
+
 - Unduh installer Node.js dari [situs web resmi](https://nodejs.org/).
 - Jalankan installer dan ikuti petunjuk di layar.
 
-#### Instalasi TypeScript:
+#### Instalasi TypeScript Windows:
+
 Buka Command Prompt atau PowerShell, lalu jalankan:
+
 ```bash
 npm install -g typescript
 ```
@@ -101,6 +109,7 @@ npm install -g typescript
 
 3.1. Buat file dengan ekstensi `.ts`, misalnya `hello.ts`, dan buka dengan editor teks pilihan Anda.
 3.2. Tulis kode berikut di dalam file `hello.ts`:
+
 ```typescript
 function sayHello(name: string) {
     console.log("Hello, " + name + "!");
@@ -108,125 +117,153 @@ function sayHello(name: string) {
 
 sayHello("World");
 ```
+
 3.3. Simpan file, lalu buka terminal atau command prompt dan navigasikan ke direktori tempat file `hello.ts` disimpan.
 3.4. Kompilasi file TypeScript ke JavaScript dengan menjalankan perintah berikut:
+
 ```bash
 tsc hello.ts
 ```
+
 Ini akan menghasilkan file `hello.js`.
 
 3.5. Sekarang, jalankan file JavaScript yang dikompilasi dengan Node.js:
+
 ```bash
 node hello.js
 ```
+
 Anda seharusnya akan melihat output: `Hello, World!`
 
 ### 4. Instalasi pada macOS:
 
-#### Instalasi Node.js:
+#### Instalasi Node.js macOS:
+
 - Anda bisa menggunakan Homebrew untuk menginstal Node.js dengan perintah:
+
 ```bash
 brew install node
 ```
 
-#### Instalasi TypeScript:
+#### Instalasi TypeScript macOS:
+
 ```bash
 npm install -g typescript
 ```
 
 Dengan langkah-langkah ini, Anda seharusnya bisa menginstal Node.js dan TypeScript di sistem operasi yang berbeda dan juga membuat dan menjalankan program TypeScript sederhana.
 
-# Convention Code
+## Convention Code
 
-## File
+### File
 
-### Benar:
+#### Benar:
+
 - Nama file harus menggunakan kebab-case dan memiliki ekstensi `.ts`, seperti `hello-world.ts`.
-- Setiap file harus memiliki satu tujuan atau tanggung jawab.
+- Setiap file harus memiliki satu tujuan atau tanggung jawab, biasanya mengikuti kata benda, misalnya `user-service.ts`.
 
-### Salah:
+#### Salah:
+
 - Menggunakan nama file dengan spasi atau karakter khusus lainnya seperti `Hello World.ts`.
 
-## Variable
+### Variable
 
-### Benar:
-- Gunakan camelCase untuk nama variabel:
+#### Benar:
+
+- Gunakan camelCase untuk nama variabel, biasanya kata benda atau frasa kata benda:
+
 ```typescript
-let myVariableName: string;
+let userName: string;
 ```
 
-### Salah:
+#### Salah:
+
 - Menggunakan nama variabel dengan huruf besar atau underscore:
+
 ```typescript
-let MyVariableName: string;
-let my_variable_name: string;
+let UserName: string;
+let user_name: string;
 ```
 
-## Fungsi
+### Fungsi
 
-### Benar:
-- Gunakan camelCase untuk nama fungsi dan berikan tipe kembali yang jelas:
+#### Benar:
+
+- Gunakan camelCase untuk nama fungsi. Fungsi biasanya mengikuti kata kerja atau frasa kata kerja dan berikan tipe kembali yang jelas:
+
 ```typescript
-function addNumbers(a: number, b: number): number {
-    return a + b;
+function calculateArea(width: number, height: number): number {
+    return width * height;
 }
 ```
 
-### Salah:
+#### Salah:
+
 - Menggunakan nama fungsi dengan huruf besar atau tidak memiliki tipe kembali:
+
 ```typescript
-function AddNumbers(a, b) {
-    return a + b;
+function CalculateArea(width, height) {
+    return width * height;
 }
 ```
 
-## Const
+### Const
 
-### Benar:
-- Gunakan UPPERCASE untuk konstanta dan pisahkan kata dengan underscore:
+#### Benar:
+
+- Gunakan UPPERCASE untuk konstanta dan pisahkan kata dengan underscore. Konstanta sering kali adalah kata benda:
+
 ```typescript
-const MAX_LIMIT: number = 100;
+const DEFAULT_COLOR: string = "blue";
 ```
 
-### Salah:
+#### Salah:
+
 - Menggunakan camelCase atau kebab-case untuk konstanta:
+
 ```typescript
-const maxLimit: number = 100;
-const max-limit: number = 100;
+const defaultColor: string = "blue";
+const default-color: string = "blue";
 ```
 
-## Object
+### Object
 
-### Benar:
-- Gunakan camelCase untuk kunci objek:
+#### Benar:
+
+- Gunakan camelCase untuk objek dan propertinya, biasanya kata benda atau frasa kata benda:
+
 ```typescript
-let person = {
-    firstName: "John",
-    lastName: "Doe"
+let orderDetails = {
+    itemId: "B123",
+    quantity: 2,
+    pricePerUnit: 39.95
 };
 ```
 
-### Salah:
+#### Salah:
+
 - Menggunakan huruf besar atau underscore untuk kunci objek:
+
 ```typescript
-let person = {
-    First_Name: "John",
-    Last_Name: "Doe"
+let Order_Details = {
+    Item_ID: "B123",
+    Quantity: 2,
+    Price_Per_Unit: 39.95
 };
 ```
 
-Tentu, berikut adalah perincian yang disederhanakan untuk penamaan kelas, interface, dan tipe:
+### Class, Interface, dan Type (Tipe)
 
-## Class, Interface, dan Type (Tipe)
+#### Benar:
 
-### Benar:
-- Gunakan PascalCase (huruf kapital di awal setiap kata) untuk penamaan kelas, interface, dan tipe:
+- Gunakan PascalCase untuk penamaan kelas, interface, dan tipe, biasanya menggunakan kata benda atau frasa kata benda yang menjelaskan entitas atau konsep:
+
 ```typescript
 class UserAccount {
     // ...
 }
 
-interface IUserProfile {
+interface UserProfile {
     // ...
 }
 
@@ -235,8 +272,10 @@ type UserCredentials = {
 };
 ```
 
-### Salah:
-- Menggunakan camelCase (huruf kecil di awal kata pertama dan huruf kapital di awal kata berikutnya) atau huruf kecil untuk penamaan kelas, interface, dan tipe:
+#### Salah:
+
+- Menggunakan camelCase atau huruf kecil untuk penamaan kelas, interface, dan tipe:
+
 ```typescript
 class userAccount {
     // ...
@@ -251,41 +290,65 @@ type userCredentials = {
 };
 ```
 
+### Comment
 
-## Comment
+#### Benar:
 
-### Benar:
-- Gunakan komentar untuk menjelaskan kode yang kompleks atau tidak jelas:
+- Gunakan komentar untuk menjelaskan kode yang kompleks atau tidak jelas. Komentar biasanya merupakan frasa atau kalimat yang menjelaskan logika atau fungsi kode:
+
 ```typescript
-// Ini adalah fungsi untuk menambahkan dua angka
-function add(a: number, b: number): number {
-    return a + b;
+// Menghitung dan mengembalikan area dari sebuah persegi panjang
+function calculateRectangleArea(width: number, height: number): number {
+    return width * height;
 }
 ```
 
-### Salah:
-- Menulis komentar yang tidak berguna atau jelas:
+#### Salah:
+
+- Menulis komentar yang tidak berguna atau jelas, atau yang hanya mengulangi apa yang sudah jelas dari kode:
+
 ```typescript
-// Menambahkan a dan b
-function add(a: number, b: number): number {
-    return a + b;
+// Menambahkan width dan height
+function calculateRectangleArea(width: number, height: number): number {
+    return width * height;
 }
 ```
 
-## Error Handling
+### Error Handling
 
-### Benar:
-- Gunakan blok `try-catch` untuk menangani kesalahan:
+#### Benar:
+
+- Gunakan blok `try-catch` untuk menangani kesalahan dan memberikan komentar yang menjelaskan penanganan jika perlu:
+
 ```typescript
 try {
+    // Mencoba menjalankan fungsi yang berisiko
     let result = riskyFunction();
 } catch (error) {
+    // Menangkap dan mencatat kesalahan
     console.error(error);
 }
-``` 
-
-### Salah:
-- Mengabaikan kesalahan atau tidak menanganinya:
-```typescript
-let result = riskyFunction();  // jika terjadi kesalahan, tidak ada penanganannya
 ```
+
+#### Salah:
+
+- Mengabaikan kesalahan atau tidak menanganinya dengan benar, atau tidak memberikan komentar yang cukup jika penanganan kompleks:
+
+```typescript
+let result = riskyFunction();  // Kesalahan tidak ditangani
+```
+
+## Conclusion
+
+| Kategori | Penulisan | Pemilihan Kata |
+| --- | --- | --- |
+| File name | kebab-case | kata benda |
+| Variable name | camelCase | kata benda |
+| Function name | camelCase | kata kerja |
+| Constant name | UPPERCASE | kata benda |
+| Object key | camelCase | kata benda |
+| Class | PascalCase | kata benda |
+| Interface | PascalCase | kata benda |
+| Type name | PascalCase | kata benda |
+| Comment | - | frasa atau kalimat |
+| Error Handling | try-catch | - |
