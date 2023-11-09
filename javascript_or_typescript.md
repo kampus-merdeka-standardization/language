@@ -198,7 +198,7 @@ const max-limit: number = 100;
 ## Object
 
 ### Benar:
-- Gunakan camelCase untuk kunci objek:
+- Gunakan camelCase untuk objek:
 ```typescript
 let person = {
     firstName: "John",
