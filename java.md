@@ -98,6 +98,18 @@ Sederhananya `JDK (Java Development Kit)` merupakan tools untuk `mengembangkan` 
 
 # Convention
 
+## Table Comparison
+
+| Kategori | Penulisan | Pemilihan Kata |
+| :-------- | :--------- | :-------------- |
+| **File name** | PascalCase | kata benda     |
+| **Variable name** | camelCase | kata benda |
+| **Constanta name** | UPPER_SNAKE_CASE | kata benda |
+| **Class name** | PascalCase | kata benda mengikuti nama Class |
+| **Method name** | camelCase | kata kerja |
+| **Interface name** | PascalCase | kata benda |
+| **Interface Implementation name** | PascalCase | Mengikuti nama interface yang ingin di-implementasikan dan dikahiri "Impl". ex = `UserServiceImpl` |
+
 ## _File_
 - _File_ Java harus diberi nama dengan huruf kapital pertama (PascalCase) yang mencerminkan nama kelas di dalamnya. Contoh: `MyClass.java`.
 
