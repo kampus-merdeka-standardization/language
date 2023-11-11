@@ -241,18 +241,18 @@ tersebut akan menjadi isi dari GOROOT. Silakan gunakan command go env untuk meli
 
 - Benar
   ```go
-  type countInterface interface {
+  type shapeInterface interface {
     countArea() float64
   }
 
-  type CountInterface interface {
+  type ShapeInterface interface {
     countArea() float64
   }
   ```
 
 - Salah
   ```go
-  type count interface {
+  type shape interface {
     countArea() float64
   }
   ```
