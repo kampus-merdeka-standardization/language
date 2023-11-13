@@ -266,6 +266,51 @@ try {
 let result = riskyFunction();  // Kesalahan tidak ditangani
 ```
 
+## Swagger
+
+Untuk pengembangan backend node.js wajib membuat dan mencantumkan swagger agar para pengembang dan reviewer dapat melihat dokumentasi API yang dituju.
+
+Berikut adalah contoh menggunakan Swagger untuk framework NestJS:
+
+1. **Instalasi Paket Swagger**: Pertama, Anda perlu menginstal paket `@nestjs/swagger`.
+
+    ```bash
+    npm install --save @nestjs/swagger
+    ```
+
+2. **Impor Modul Swagger**: Setelah paket terinstal, impor `SwaggerModule` dan `DocumentBuilder` ke dalam aplikasi NestJS Anda.
+
+    ```javascript
+    import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+    ```
+
+3. **Konfigurasi Dokumentasi**: Buat instance baru dari kelas `DocumentBuilder` untuk mengonfigurasi properti dasar dokumentasi Swagger Anda, seperti judul, deskripsi, dan versi.
+
+    ```javascript
+    const config = new DocumentBuilder()
+      .setTitle('My NestJS API')
+      .setDescription('The API description')
+      .setVersion('1.0')
+      .addTag('my-api')
+      .build();
+    ```
+
+4. **Menghasilkan Dokumen Swagger**: Gunakan instance `DocumentBuilder` untuk menghasilkan dokumen Swagger untuk aplikasi NestJS Anda.
+
+    ```javascript
+    const document = SwaggerModule.createDocument(app, config);
+    ```
+
+5. **Mounting Swagger UI**: Terakhir, mount Swagger UI ke aplikasi NestJS Anda.
+
+    ```javascript
+    SwaggerModule.setup('api', app, document);
+    ```
+
+Setelah menyelesaikan langkah-langkah ini, Anda dapat melihat dokumentasi Swagger Anda di `http://localhost:<PORT>/api`. 
+
+ini hanyalah contoh untuk framework NestJS, untuk penggunaan di framework lainnya diharapkan cek dokumentasi resmi.
+
 ## Referensi
 
 - [Apa Itu TypeScript? Kelebihan TypeScript, dan Perbedaannya - Caraguna](https://caraguna.com/apa-itu-typescript/)
