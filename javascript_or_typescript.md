@@ -4,14 +4,9 @@
 
 Pada tahun 2012, TypeScript diperkenalkan ke publik dengan tujuan utama untuk mengatasi keterbatasan yang ada pada JavaScript. Microsoft, dalam mengembangkan TypeScript, ingin meningkatkan kemampuan dan fleksibilitas bahasa ini untuk pengembangan aplikasi yang lebih kompleks dan robust. Rilis pertama TypeScript (versi 0.8) diperkenalkan pada Oktober 2012.
 
-**Referensi**:
+# Comparation
 
-- [Apa Itu TypeScript? Kelebihan TypeScript, dan Perbedaannya - Caraguna](https://caraguna.com/apa-itu-typescript/)
-- [Sejarah Lengkap JavaScript, TypeScript, dan Node.js - ICHI.PRO](https://ichi.pro/id/sejarah-lengkap-javascript-typescript-dan-node-js-38930825526926)
-
-## Comparation
-
-### Pros & Cons Typescript
+## Pros & Cons Typescript
 
 | Kelebihan                                              | Kekurangan                                                    |
 |--------------------------------------------------------|---------------------------------------------------------------|
@@ -21,83 +16,31 @@ Pada tahun 2012, TypeScript diperkenalkan ke publik dengan tujuan utama untuk me
 | Tipe yang disediakan oleh komunitas| Kinerja build dapat terpengaruh        |
 | Keamanan tipe yang lebih baik: TypeScript menyediakan pengetikan statis, yang berarti Anda dapat menangkap kesalahan pada saat waktu kompilasi alih-alih waktu runtime|                                                               |
 
-Referensi:
+# Installation
 
-- [LogRocket Blog: Understanding TypeScript’s benefits and pitfalls](https://blog.logrocket.com/understanding-typescripts-benefits-and-pitfalls-24c1e02b3e9c/)
-- [Ablison: Pros And Cons Of Typescript 2023](https://www.ablison.com/pros-and-cons-of-typescript-2023/)
+## 1. Instalasi pada Ubuntu:
 
-### Pros & Cons Php
-
-Berikut adalah tabel yang diperbarui untuk kelebihan dan kekurangan PHP dengan referensi di akhir:
-
-| Kelebihan                                       | Kekurangan                   |
-|-------------------------------------------------|------------------------------|
-| Gratis dan open-source      | Dapat menurun popularitasnya|
-| Dapat diunduh dan digunakan di mana saja untuk acara atau aplikasi web| Sintaks yang tidak konsisten|
-| Platform-independent: aplikasi PHP dapat berjalan di berbagai OS seperti UNIX, Linux, Windows, dll.| Alat debugging yang buruk|
-| library yang luas              | Masalah keamanan seperti XSS, SQL Injection, dan Session hacking|
-| Dapat disesuaikan dengan berbagai platform dan teknologi| Masalah dan bug tidak dapat diatasi dengan cepat|
-| Dukungan komunitas yang kuat   | Harus menulis banyak kode untuk membangun aplikasi|
-| Pemeliharaan yang lebih mudah   |                              |
-| Pilihan spesialis yang tersedia dalam jumlah besar|       |
-| Kecepatan pemuatan yang meningkat|                            |
-| Seleksi database yang luas      |                              |
-| Fleksibilitas yang baik         |                              |
-| Kompatibilitas dengan layanan cloud|                          |
-| Dapat diskalakan                |                              |
-
-Referensi:
-
-- [GeeksforGeeks: Advantages and Disadvantages of PHP](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-php/)
-- [Softjourn: Why Use PHP in 2023? Advantages and Disadvantages](https://softjourn.com/en/blog/why-use-php-2023-advantages-and-disadvantages)
-- [EPAM: Advantages and Disadvantages of PHP Programming Language](https://anywhere.epam.com/business/pros-and-cons-of-php)
-- [Unstop: Advantages And Disadvantages Of PHP: Why Should You Use PHP?](https://unstop.com/php-pros-cons/)
-- [CHTips: Advantages and Disadvantages of PHP | Pros and Cons of PHP](https://www.chtips.com/php/advantages-and-disadvantages-of-php)
-
-### Pros & Cons Python
-
-| Kelebihan                                      | Kekurangan                                                     |
-|------------------------------------------------|----------------------------------------------------------------|
-| Mudah dipelajari dan digunakan| Masalah kecepatan dan performa                 |
-| library yang luas        | Kurang mendukung komputasi mobile             |
-| Versatil (berbagai kegunaan)  | Akses database yang kurang dikembangkan      |
-| Produktivitas yang meningkat  | Kesalahan runtime karena tipe data dinamis    |
-| Portabilitas (dapat berjalan di berbagai platform)|                                                                |
-| Bahasa yang diinterpretasikan (memudahkan debugging)|                                                               |
-| Cocok untuk pemula         |                                                                |
-| Sintaks yang mudah dibaca  |                                                                |
-
-Referensi:
-
-- [ScanSkill: Python Programming Language: Pros & Cons](https://scanskill.com/backend/python/python-what-are-the-benefits-and-downsides-of-the-programming-language/)
-- [PixelCrayons: Pros and Cons of Python Programming Language](https://www.pixelcrayons.com/blog/web/pros-and-cons-of-python-programming-language/)
-- [Python Geeks: Advantages of Python | Disadvantages of Python](https://pythongeeks.org/advantages-disadvantages-python/)
-
-## Installation
-
-### 1. Instalasi pada Ubuntu:
-
-#### Instalasi Node.js:
+### Instalasi Node.js:
 
 ```bash
 sudo apt update
 sudo apt install nodejs npm
 ```
 
-#### Instalasi TypeScript:
+### Instalasi TypeScript:
 
 ```bash
 sudo npm install -g typescript
 ```
 
-### 2. Instalasi pada Windows:
+## 2. Instalasi pada Windows:
 
-#### Instalasi Node.js Windows:
+### Instalasi Node.js Windows:
 
 - Unduh installer Node.js dari [situs web resmi](https://nodejs.org/).
 - Jalankan installer dan ikuti petunjuk di layar.
 
-#### Instalasi TypeScript Windows:
+### Instalasi TypeScript Windows:
 
 Buka Command Prompt atau PowerShell, lalu jalankan:
 
@@ -105,39 +48,9 @@ Buka Command Prompt atau PowerShell, lalu jalankan:
 npm install -g typescript
 ```
 
-### 3. Membuat Program TypeScript Sederhana:
+## 3. Instalasi pada macOS:
 
-3.1. Buat file dengan ekstensi `.ts`, misalnya `hello.ts`, dan buka dengan editor teks pilihan Anda.
-3.2. Tulis kode berikut di dalam file `hello.ts`:
-
-```typescript
-function sayHello(name: string) {
-    console.log("Hello, " + name + "!");
-}
-
-sayHello("World");
-```
-
-3.3. Simpan file, lalu buka terminal atau command prompt dan navigasikan ke direktori tempat file `hello.ts` disimpan.
-3.4. Kompilasi file TypeScript ke JavaScript dengan menjalankan perintah berikut:
-
-```bash
-tsc hello.ts
-```
-
-Ini akan menghasilkan file `hello.js`.
-
-3.5. Sekarang, jalankan file JavaScript yang dikompilasi dengan Node.js:
-
-```bash
-node hello.js
-```
-
-Anda seharusnya akan melihat output: `Hello, World!`
-
-### 4. Instalasi pada macOS:
-
-#### Instalasi Node.js macOS:
+### Instalasi Node.js macOS:
 
 - Anda bisa menggunakan Homebrew untuk menginstal Node.js dengan perintah:
 
@@ -145,7 +58,7 @@ Anda seharusnya akan melihat output: `Hello, World!`
 brew install node
 ```
 
-#### Instalasi TypeScript macOS:
+### Instalasi TypeScript macOS:
 
 ```bash
 npm install -g typescript
@@ -153,22 +66,37 @@ npm install -g typescript
 
 Dengan langkah-langkah ini, Anda seharusnya bisa menginstal Node.js dan TypeScript di sistem operasi yang berbeda dan juga membuat dan menjalankan program TypeScript sederhana.
 
-## Convention Code
+# Convention Code
 
-### File
+## Table Comparison
 
-#### Benar:
+## Conclusion
+
+| Kategori | Penulisan | Pemilihan Kata |
+| --- | --- | --- |
+| File name | kebab-case | kata benda |
+| Variable name | camelCase | kata benda |
+| Function name | camelCase | kata kerja |
+| Constant name | UPPERCASE | kata benda |
+| Object key | camelCase | kata benda |
+| Class | PascalCase | kata benda |
+| Interface | PascalCase | kata benda |
+| Type name | PascalCase | kata benda |
+
+## File
+
+### Benar:
 
 - Nama file harus menggunakan kebab-case dan memiliki ekstensi `.ts`, seperti `hello-world.ts`.
 - Setiap file harus memiliki satu tujuan atau tanggung jawab, biasanya mengikuti kata benda, misalnya `user-service.ts`.
 
-#### Salah:
+### Salah:
 
 - Menggunakan nama file dengan spasi atau karakter khusus lainnya seperti `Hello World.ts`.
 
-### Variable
+## Variable
 
-#### Benar:
+### Benar:
 
 - Gunakan camelCase untuk nama variabel, biasanya kata benda atau frasa kata benda:
 
@@ -176,7 +104,7 @@ Dengan langkah-langkah ini, Anda seharusnya bisa menginstal Node.js dan TypeScri
 let userName: string;
 ```
 
-#### Salah:
+### Salah:
 
 - Menggunakan nama variabel dengan huruf besar atau underscore:
 
@@ -185,9 +113,9 @@ let UserName: string;
 let user_name: string;
 ```
 
-### Fungsi
+## Fungsi
 
-#### Benar:
+### Benar:
 
 - Gunakan camelCase untuk nama fungsi. Fungsi biasanya mengikuti kata kerja atau frasa kata kerja dan berikan tipe kembali yang jelas:
 
@@ -197,7 +125,7 @@ function calculateArea(width: number, height: number): number {
 }
 ```
 
-#### Salah:
+### Salah:
 
 - Menggunakan nama fungsi dengan huruf besar atau tidak memiliki tipe kembali:
 
@@ -207,9 +135,9 @@ function CalculateArea(width, height) {
 }
 ```
 
-### Const
+## Const
 
-#### Benar:
+### Benar:
 
 - Gunakan UPPERCASE untuk konstanta dan pisahkan kata dengan underscore. Konstanta sering kali adalah kata benda:
 
@@ -217,7 +145,7 @@ function CalculateArea(width, height) {
 const DEFAULT_COLOR: string = "blue";
 ```
 
-#### Salah:
+### Salah:
 
 - Menggunakan camelCase atau kebab-case untuk konstanta:
 
@@ -226,9 +154,9 @@ const defaultColor: string = "blue";
 const default-color: string = "blue";
 ```
 
-### Object
+## Object
 
-#### Benar:
+### Benar:
 
 - Gunakan camelCase untuk objek dan propertinya, biasanya kata benda atau frasa kata benda:
 
@@ -240,7 +168,7 @@ let orderDetails = {
 };
 ```
 
-#### Salah:
+### Salah:
 
 - Menggunakan huruf besar atau underscore untuk kunci objek:
 
@@ -252,9 +180,9 @@ let Order_Details = {
 };
 ```
 
-### Class, Interface, dan Type (Tipe)
+## Class, Interface, dan Type (Tipe)
 
-#### Benar:
+### Benar:
 
 - Gunakan PascalCase untuk penamaan kelas, interface, dan tipe, biasanya menggunakan kata benda atau frasa kata benda yang menjelaskan entitas atau konsep:
 
@@ -272,7 +200,7 @@ type UserCredentials = {
 };
 ```
 
-#### Salah:
+### Salah:
 
 - Menggunakan camelCase atau huruf kecil untuk penamaan kelas, interface, dan tipe:
 
@@ -290,9 +218,9 @@ type userCredentials = {
 };
 ```
 
-### Comment
+## Comment
 
-#### Benar:
+### Benar:
 
 - Gunakan komentar untuk menjelaskan kode yang kompleks atau tidak jelas. Komentar biasanya merupakan frasa atau kalimat yang menjelaskan logika atau fungsi kode:
 
@@ -303,7 +231,7 @@ function calculateRectangleArea(width: number, height: number): number {
 }
 ```
 
-#### Salah:
+### Salah:
 
 - Menulis komentar yang tidak berguna atau jelas, atau yang hanya mengulangi apa yang sudah jelas dari kode:
 
@@ -314,9 +242,9 @@ function calculateRectangleArea(width: number, height: number): number {
 }
 ```
 
-### Error Handling
+## Error Handling
 
-#### Benar:
+### Benar:
 
 - Gunakan blok `try-catch` untuk menangani kesalahan dan memberikan komentar yang menjelaskan penanganan jika perlu:
 
@@ -330,7 +258,7 @@ try {
 }
 ```
 
-#### Salah:
+### Salah:
 
 - Mengabaikan kesalahan atau tidak menanganinya dengan benar, atau tidak memberikan komentar yang cukup jika penanganan kompleks:
 
@@ -338,17 +266,9 @@ try {
 let result = riskyFunction();  // Kesalahan tidak ditangani
 ```
 
-## Conclusion
+## Referensi
 
-| Kategori | Penulisan | Pemilihan Kata |
-| --- | --- | --- |
-| File name | kebab-case | kata benda |
-| Variable name | camelCase | kata benda |
-| Function name | camelCase | kata kerja |
-| Constant name | UPPERCASE | kata benda |
-| Object key | camelCase | kata benda |
-| Class | PascalCase | kata benda |
-| Interface | PascalCase | kata benda |
-| Type name | PascalCase | kata benda |
-| Comment | - | frasa atau kalimat |
-| Error Handling | try-catch | - |
+- [Apa Itu TypeScript? Kelebihan TypeScript, dan Perbedaannya - Caraguna](https://caraguna.com/apa-itu-typescript/)
+- [Sejarah Lengkap JavaScript, TypeScript, dan Node.js - ICHI.PRO](https://ichi.pro/id/sejarah-lengkap-javascript-typescript-dan-node-js-38930825526926)
+- [LogRocket Blog: Understanding TypeScript’s benefits and pitfalls](https://blog.logrocket.com/understanding-typescripts-benefits-and-pitfalls-24c1e02b3e9c/)
+- [Ablison: Pros And Cons Of Typescript 2023](https://www.ablison.com/pros-and-cons-of-typescript-2023/)
