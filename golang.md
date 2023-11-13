@@ -291,6 +291,10 @@ func countArea(side float64) float64 {
   }
   ```
 
+## API Documentation
+
+diarahkan pake swagger & cara makenya
+
 ## Reference
 
 - [Dokumentasi Resmi Go](https://go.dev/doc/)
