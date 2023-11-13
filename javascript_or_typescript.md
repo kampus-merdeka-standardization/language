@@ -266,6 +266,10 @@ try {
 let result = riskyFunction();  // Kesalahan tidak ditangani
 ```
 
+## API Documentation
+
+diarahkan pake swagger & cara makenya
+
 ## Referensi
 
 - [Apa Itu TypeScript? Kelebihan TypeScript, dan Perbedaannya - Caraguna](https://caraguna.com/apa-itu-typescript/)
