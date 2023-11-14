@@ -293,7 +293,24 @@ func countArea(side float64) float64 {
 
 ## API Documentation
 
-diarahkan pake swagger & cara makenya
+Dokumentasi API adalah panduan resmi yang menyajikan informasi teknis tentang cara menggunakan dan berinteraksi dengan suatu antarmuka pemrograman aplikasi (API). Dokumentasi ini mencakup deskripsi detail tentang endpoint API, parameter yang diperlukan, respons yang diharapkan, serta contoh penggunaan.
+
+Swagger adalah alat yang sangat berguna untuk membuat dokumentasi API dengan cara yang terstruktur, interaktif, dan mudah dipahami. Dengan menggunakan Swagger, secara otomatis menghasilkan dokumentasi API dari kode sumber Anda, memvisualisasikan endpoint, parameter, dan respons dengan jelas. 
+
+Berikut adalah cara menginstall swagger di Golang:
+1. install go-swagger
+   ```sh
+   git clone https://github.com/go-swagger/go-swagger 
+   ```
+2. Masuk ke dalam direktori go-swagger
+   ```sh
+   go install ./cmd/swagger
+   ```
+3. Verify go-swagger
+   ```sh
+   swagger
+   Please specify one command of: diff, expand, flatten, generate, init, mixin, serve, validate or version. 
+   ```
 
 ## Reference
 
@@ -301,3 +318,4 @@ diarahkan pake swagger & cara makenya
 - [Effectice Go](https://go.dev/doc/effective_go)
 - [Dasar Pemrograman Golang](https://dasarpemrogramangolang.novalagung.com/)
 - [Interface Naming](https://medium.com/@dotronglong/interface-naming-convention-in-golang-f53d9f471593)
+- [Implementasi go-swagger Golang](https://www.mitrais.com/news-updates/implementing-golang-api-documentation-using-go-swagger/)
