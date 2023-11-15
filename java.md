@@ -18,14 +18,6 @@ Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termas
 | Pada Java versi terbaru terdapat fitur-fitur yang menarik dan berguna seperti virtual threads, record patterns, pattern matching for switch, string templates, unnamed classes and instance main methods, dan lain-lain ||
 | Java dapat digunakan untuk mengembangkan aplikasi web dan mobile yang berskala besar, efisien, dan responsif ||
 
-### Reference :
-- [Pros and Cons of Java | Advantages and Disadvantages of Java - DataFlair](https://data-flair.training/blogs/pros-and-cons-of-java/)
-- [20 Important Pros and Cons of Java 2023 | Ablison](https://www.ablison.com/important-pros-and-cons-of-java/#google_vignette)
-- [Pros and Cons of Choosing Java Development For Your Project](https://star-knowledge.com/blog/pros-and-cons-of-choosing-java-development-for-your-project/)
-- [Advantages and disadvantages of Java - Javatpoint](https://www.javatpoint.com/advantages-and-disadvantages-of-java)
-- [The Pros and Cons of Java Development | Blog - BairesDev](https://www.bairesdev.com/blog/pros-cons-java-development/)
-- [Pros and Cons of Java: Key Advantages and Disadvantages - Softjourn](https://softjourn.com/insights/pros-and-cons-of-java-development)
-
 # Installation
 Pada dokumentasi ini, kita akan mencoba meng-install menggunakan [OpenJDK](https://openjdk.java.net/) dikarenakan open source dan juga free.
 
@@ -312,4 +304,41 @@ try {
 
 ## API Documentation
 
-diarahkan pake swagger & cara makenya
+Dokumentasi API adalah panduan resmi yang menyajikan informasi teknis tentang cara menggunakan dan berinteraksi dengan suatu antarmuka pemrograman aplikasi (API). Dokumentasi ini mencakup deskripsi detail tentang endpoint API, parameter yang diperlukan, respons yang diharapkan, serta contoh penggunaan.
+
+Berikut adalah cara membuat API Documentation secara otomatis pada Spring,
+
+1. Menambahkan dependensi `springdoc-openapi-starter-webmvc-ui` pada `pom.xml`
+
+    ```xml
+    <dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.2.0</version>
+    </dependency>
+    ```
+
+    atau pada build.gradle
+
+    ```kotlin
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0")
+    ```
+
+2. Setelah menambahkan dependensi dengan benar, jalankan aplikasi dan bukalah endpoint `/v3/api-docs`. Ini merupakan endpoint default
+
+3. Kita juga bisa mengubah path di `application.properties` menggunakan properti `springdoc.api-docs.path`
+
+4. Selain menghasilkan spesifikasi OpenAPI 3, kita dapat mengintegrasikan `springdoc-openapi` dengan `Swagger UI`. Dependensi `springdoc-openapi` sudah mencakup `Swagger UI`, jadi kita bisa mengakses dokumentasi api pada path `/swagger-ui/index.html`
+
+5. Kita dapat menyesuaikan path dokumentasi API kita dengan mengubah properti `springdoc.swagger-ui.path` di dalam file `application.properties`.
+
+# References
+
+- [Pros and Cons of Java | Advantages and Disadvantages of Java - DataFlair](https://data-flair.training/blogs/pros-and-cons-of-java/)
+- [20 Important Pros and Cons of Java 2023 | Ablison](https://www.ablison.com/important-pros-and-cons-of-java/#google_vignette)
+- [Pros and Cons of Choosing Java Development For Your Project](https://star-knowledge.com/blog/pros-and-cons-of-choosing-java-development-for-your-project/)
+- [Advantages and disadvantages of Java - Javatpoint](https://www.javatpoint.com/advantages-and-disadvantages-of-java)
+- [The Pros and Cons of Java Development | Blog - BairesDev](https://www.bairesdev.com/blog/pros-cons-java-development/)
+- [Pros and Cons of Java: Key Advantages and Disadvantages - Softjourn](https://softjourn.com/insights/pros-and-cons-of-java-development)
+
+- [Documenting a Spring REST API Using OpenAPI 3.0 | Baeldung](https://www.baeldung.com/spring-rest-openapi-documentation)
