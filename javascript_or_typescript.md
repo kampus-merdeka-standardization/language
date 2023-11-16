@@ -266,7 +266,9 @@ try {
 let result = riskyFunction();  // Kesalahan tidak ditangani
 ```
 
-## Swagger
+## API Documentation
+
+### Swagger
 
 Untuk pengembangan backend node.js wajib membuat dan mencantumkan swagger agar para pengembang dan reviewer dapat melihat dokumentasi API yang dituju.
 
