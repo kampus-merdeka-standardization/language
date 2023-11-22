@@ -1,6 +1,6 @@
-# Telkomsel Main Language
+# **T** Main Language
 
-Merupakan standarisasi dari ketiga bahasa pemrograman utama yang dipakai **Telkomsel** dalam proses pengembangan perangkat lunak
+Merupakan standarisasi dari ketiga bahasa pemrograman utama yang dipakai ****T**** dalam proses pengembangan perangkat lunak
 
 ## [Golang](/golang.md)
 
